@@ -209,7 +209,7 @@ bool JammerView::update_config() {
 
                 for (c = 0; c < num_channels; c++) {
                     if (i >= JAMMER_MAX_CH) {
-                        out_of_ranges = true;
+                        out_of_ranges = false;
                         break;
                     }
                     set_jammer_channel(i, ch_width, start_freq + (ch_width / 2) + (ch_width * c), hop_value);
